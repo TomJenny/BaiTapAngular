@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AppComponent } from './app.component';
 import { BaiTap5Component } from './baitap5/baitap5.component';
 import { BaiTap6Component } from './baitap6/baitap6.component';
 import { BaiTap7Component } from './baitap7/baitap7.component';

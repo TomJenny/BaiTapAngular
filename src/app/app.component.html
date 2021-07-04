@@ -1,9 +1,17 @@
 <div class='container text-center my-5'>
-<button  class="btn btn-warning mr-3"routerLink="/" routerLinkActive="active">TRANG CHỦ</button>
-<button  class="btn btn-success mr-3"routerLink="/baitap5" routerLinkActive="active">Bài Tập 5</button>
-<button  class="btn btn-danger mr-3"routerLink="/baitap6" routerLinkActive="active">Bài Tập 6</button>
-<button  class="btn btn-primary"routerLink="/baitap7" routerLinkActive="active">Bài Tập 7</button>
-
+<button  class="btn btn-warning mr-3"routerLink="/" routerLinkActive="active" (click)="ChangeLogo(true)">TRANG CHỦ</button>
+<button  class="btn btn-success mr-3"routerLink="/baitap5" routerLinkActive="active" (click)="ChangeLogo(false)">Bài Tập 5</button>
+<button  class="btn btn-danger mr-3"routerLink="/baitap6" routerLinkActive="active" (click)="ChangeLogo(false)">Bài Tập 6</button>
+<button  class="btn btn-primary"routerLink="/baitap7" routerLinkActive="active" (click)="ChangeLogo(false)">Bài Tập 7</button>
+</div>
+<div class="container">
+<div *ngIf=" logo ; else router">
+  <img src="assets/img/logo.png" class="mx-auto d-block">
+  <h1 class="text-danger text-center">WELCOME TO MY ANGULAR APP</h1>
+  </div>
+  <ng-template #router>
+  <img src="assets/img/logo.png" class="mx-auto d-block position-absolute" style="width:210px; height: 200px; top:0px; left:20px ">
+    <router-outlet></router-outlet>
+  </ng-template>
 
 </div>
-<router-outlet></router-outlet>

@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'baitap-angular-app';
+  logo: boolean = true;
+  ChangeLogo(boolean:boolean) {
+    this.logo = boolean;
+  }
 }
