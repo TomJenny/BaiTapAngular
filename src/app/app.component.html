@@ -1,8 +1,10 @@
 <div class='container text-center my-5'>
-<button  class="btn btn-warning mr-3"routerLink="/" routerLinkActive="active" (click)="ChangeLogo(true)">TRANG CHỦ</button>
-<button  class="btn btn-success mr-3"routerLink="/baitap5" routerLinkActive="active" (click)="ChangeLogo(false)">Bài Tập 5</button>
-<button  class="btn btn-danger mr-3"routerLink="/baitap6" routerLinkActive="active" (click)="ChangeLogo(false)">Bài Tập 6</button>
-<button  class="btn btn-primary"routerLink="/baitap7" routerLinkActive="active" (click)="ChangeLogo(false)">Bài Tập 7</button>
+<button  class="btn btn-warning mr-3" routerLink="/" routerLinkActive="active" (click)="ChangeLogo(true)">TRANG CHỦ</button>
+<button  class="btn btn-success mr-3" routerLink="/baitap5" (click)="ChangeLogo(false)">Bài Tập 5</button>
+<button  class="btn btn-danger mr-3" routerLink="/baitap6" (click)="ChangeLogo(false)">Bài Tập 6</button>
+<button  class="btn btn-primary mr-3" routerLink="/baitap7" (click)="ChangeLogo(false)">Bài Tập 7</button>
+<button  class="btn btn-info" routerLink="/baitap8" (click)="ChangeLogo(false)">Bài Tập 8</button>
+
 </div>
 <div class="container">
 <div *ngIf=" logo ; else router">
